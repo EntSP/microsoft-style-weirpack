@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (broadcasted)
+
+let message "Prefer 'broadcast' over 'broadcasted'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "broadcast"
+
+test "We should broadcasted today." "We should broadcast today."

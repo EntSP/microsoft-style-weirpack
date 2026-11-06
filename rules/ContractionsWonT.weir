@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Contractions.yml (MIT).
+# Generated -- see the README.
+
+expr main (will not)
+
+let message "Use 'won't' instead of 'will not'."
+let description "Microsoft Writing Style Guide: Contractions."
+let kind "Style"
+let becomes "won't"
+
+test "We should will not today." "We should won't today."

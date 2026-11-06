@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main [(as a means of), (in an effort to), (in order to)]
+
+let message "Consider using 'to' here."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "to"
+
+test "We should as a means of today." "We should to today."

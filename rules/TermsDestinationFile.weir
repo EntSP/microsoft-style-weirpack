@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (target file)
+
+let message "Prefer 'destination file' over 'target file'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "destination file"
+
+test "We should target file today." "We should destination file today."

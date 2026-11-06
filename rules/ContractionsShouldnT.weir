@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Contractions.yml (MIT).
+# Generated -- see the README.
+
+expr main (should not)
+
+let message "Use 'shouldn't' instead of 'should not'."
+let description "Microsoft Writing Style Guide: Contractions."
+let kind "Style"
+let becomes "shouldn't"
+
+test "We should should not today." "We should shouldn't today."

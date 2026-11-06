@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (type size)
+
+let message "Prefer 'font size' over 'type size'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "font size"
+
+test "We should type size today." "We should font size today."

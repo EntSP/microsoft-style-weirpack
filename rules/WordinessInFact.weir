@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (as a matter of fact)
+
+let message "Consider using 'in fact' instead of 'as a matter of fact'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "in fact"
+
+test "We should as a matter of fact today." "We should in fact today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (in the neighborhood of)
+
+let message "Consider using 'roughly' instead of 'in the neighborhood of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "roughly"
+
+test "We should in the neighborhood of today." "We should roughly today."

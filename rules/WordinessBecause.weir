@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main [(based on the fact that), (because of the fact that), (due to the fact that)]
+
+let message "Consider using 'because' here."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "because"
+
+test "We should based on the fact that today." "We should because today."

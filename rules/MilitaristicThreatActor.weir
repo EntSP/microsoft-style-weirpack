@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Militaristic.yml (MIT).
+# Generated -- see the README.
+
+expr main (adversary)
+
+let message "Consider 'threat actor' instead of 'adversary'."
+let description "Microsoft Writing Style Guide: Militaristic."
+let kind "Usage"
+let becomes "threat actor"
+
+test "We should adversary today." "We should threat actor today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft BiasFree.yml (MIT).
+# Generated -- see the README.
+
+expr main (spirit animal)
+
+let message "Consider 'role model' instead of 'spirit animal'."
+let description "Microsoft Writing Style Guide: BiasFree."
+let kind "Usage"
+let becomes "role model"
+
+test "We should spirit animal today." "We should role model today."

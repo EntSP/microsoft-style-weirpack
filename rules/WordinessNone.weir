@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (none at all)
+
+let message "Consider using 'none' instead of 'none at all'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "none"
+
+test "We should none at all today." "We should none today."

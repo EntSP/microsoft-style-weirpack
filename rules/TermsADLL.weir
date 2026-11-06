@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (an DLL)
+
+let message "Prefer 'a DLL' over 'an DLL'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "a DLL"
+
+test "We should an DLL today." "We should a DLL today."

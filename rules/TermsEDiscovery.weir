@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (ediscovery)
+
+let message "Prefer 'e-discovery' over 'ediscovery'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "e-discovery"
+
+test "We should ediscovery today." "We should e-discovery today."

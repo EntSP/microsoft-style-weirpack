@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (anti-spyware)
+
+let message "Prefer 'antispyware' over 'anti-spyware'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "antispyware"
+
+test "We should anti-spyware today." "We should antispyware today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (in a careful manner)
+
+let message "Consider using 'carefully' instead of 'in a careful manner'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "carefully"
+
+test "We should in a careful manner today." "We should carefully today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (any and all)
+
+let message "Consider using 'all' instead of 'any and all'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "all"
+
+test "We should any and all today." "We should all today."

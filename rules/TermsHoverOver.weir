@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (mouse over)
+
+let message "Prefer 'hover over' over 'mouse over'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "hover over"
+
+test "We should mouse over today." "We should hover over today."

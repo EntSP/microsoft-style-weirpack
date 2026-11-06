@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (it professional)
+
+let message "Prefer 'IT pro' over 'it professional'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "IT pro"
+
+test "We should it professional today." "We should IT pro today."

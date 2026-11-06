@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (fall down)
+
+let message "Consider using 'fall' instead of 'fall down'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "fall"
+
+test "We should fall down today." "We should fall today."

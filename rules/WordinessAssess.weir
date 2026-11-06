@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (perform an assessment of)
+
+let message "Consider using 'assess' instead of 'perform an assessment of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "assess"
+
+test "We should perform an assessment of today." "We should assess today."

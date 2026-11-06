@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (disappear from sight)
+
+let message "Consider using 'disappear' instead of 'disappear from sight'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "disappear"
+
+test "We should disappear from sight today." "We should disappear today."

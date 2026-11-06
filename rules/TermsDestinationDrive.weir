@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (target drive)
+
+let message "Prefer 'destination drive' over 'target drive'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "destination drive"
+
+test "We should target drive today." "We should destination drive today."

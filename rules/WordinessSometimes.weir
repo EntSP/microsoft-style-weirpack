@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (in some cases)
+
+let message "Consider using 'sometimes' instead of 'in some cases'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "sometimes"
+
+test "We should in some cases today." "We should sometimes today."

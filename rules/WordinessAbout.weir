@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main [(an estimated), (pertaining to)]
+
+let message "Consider using 'about' here."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "about"
+
+test "We should an estimated today." "We should about today."

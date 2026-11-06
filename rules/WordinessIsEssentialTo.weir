@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (plays a key role in)
+
+let message "Consider using 'is essential to' instead of 'plays a key role in'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "is essential to"
+
+test "We should plays a key role in today." "We should is essential to today."

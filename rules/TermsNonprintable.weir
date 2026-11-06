@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (unprintable)
+
+let message "Prefer 'nonprintable' over 'unprintable'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "nonprintable"
+
+test "We should unprintable today." "We should nonprintable today."

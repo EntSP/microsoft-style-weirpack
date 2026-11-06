@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (a SQL)
+
+let message "Prefer 'an SQL' over 'a SQL'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "an SQL"
+
+test "We should a SQL today." "We should an SQL today."

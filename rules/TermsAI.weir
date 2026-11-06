@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (artificial intelligence)
+
+let message "Prefer 'AI' over 'artificial intelligence'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "AI"
+
+test "We should artificial intelligence today." "We should AI today."

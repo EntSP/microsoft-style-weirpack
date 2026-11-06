@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (almost never)
+
+let message "Consider using 'seldom' instead of 'almost never'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "seldom"
+
+test "We should almost never today." "We should seldom today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (as a result of)
+
+let message "Consider using 'because of' instead of 'as a result of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "because of"
+
+test "We should as a result of today." "We should because of today."

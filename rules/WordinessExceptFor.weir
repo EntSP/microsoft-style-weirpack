@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (with the exception of)
+
+let message "Consider using 'except for' instead of 'with the exception of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "except for"
+
+test "We should with the exception of today." "We should except for today."

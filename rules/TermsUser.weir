@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (end user)
+
+let message "Prefer 'user' over 'end user'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "user"
+
+test "We should end user today." "We should user today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (are in agreement)
+
+let message "Consider using 'agree' instead of 'are in agreement'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "agree"
+
+test "We should are in agreement today." "We should agree today."

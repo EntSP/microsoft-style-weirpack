@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Contractions.yml (MIT).
+# Generated -- see the README.
+
+expr main (could not)
+
+let message "Use 'couldn't' instead of 'could not'."
+let description "Microsoft Writing Style Guide: Contractions."
+let kind "Style"
+let becomes "couldn't"
+
+test "We should could not today." "We should couldn't today."

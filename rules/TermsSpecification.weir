@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (spec)
+
+let message "Prefer 'specification' over 'spec'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "specification"
+
+test "We should spec today." "We should specification today."

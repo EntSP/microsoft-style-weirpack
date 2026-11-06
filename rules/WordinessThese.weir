@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (all of these)
+
+let message "Consider using 'these' instead of 'all of these'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "these"
+
+test "We should all of these today." "We should these today."

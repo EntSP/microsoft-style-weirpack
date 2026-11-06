@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (adversely impact)
+
+let message "Consider using 'hurt' instead of 'adversely impact'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "hurt"
+
+test "We should adversely impact today." "We should hurt today."

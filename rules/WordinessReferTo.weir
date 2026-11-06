@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (make reference to)
+
+let message "Consider using 'refer to' instead of 'make reference to'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "refer to"
+
+test "We should make reference to today." "We should refer to today."

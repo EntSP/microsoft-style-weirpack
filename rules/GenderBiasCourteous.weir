@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft GenderBias.yml (MIT).
+# Generated -- see the README.
+
+expr main (ladylike)
+
+let message "Consider using 'courteous' instead of 'ladylike'."
+let description "Microsoft Writing Style Guide: GenderBias."
+let kind "Usage"
+let becomes "courteous"
+
+test "We should ladylike today." "We should courteous today."

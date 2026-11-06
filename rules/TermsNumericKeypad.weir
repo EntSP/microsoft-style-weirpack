@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (numeric keyboard)
+
+let message "Prefer 'numeric keypad' over 'numeric keyboard'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "numeric keypad"
+
+test "We should numeric keyboard today." "We should numeric keypad today."

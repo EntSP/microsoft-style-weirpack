@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (conduct a review of)
+
+let message "Consider using 'review' instead of 'conduct a review of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "review"
+
+test "We should conduct a review of today." "We should review today."

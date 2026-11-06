@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main [(drag and drop), (drag-and-drop)]
+
+let message "Consider using 'drag' here."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "drag"
+
+test "We should drag and drop today." "We should drag today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (information technology)
+
+let message "Prefer 'IT' over 'information technology'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "IT"
+
+test "We should information technology today." "We should IT today."

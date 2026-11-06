@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (eb)
+
+let message "Prefer 'EB' over 'eb'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "EB"
+
+test "We should eb today." "We should EB today."

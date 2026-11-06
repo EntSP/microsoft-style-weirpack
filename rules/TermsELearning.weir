@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (elearning)
+
+let message "Prefer 'e-learning' over 'elearning'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "e-learning"
+
+test "We should elearning today." "We should e-learning today."

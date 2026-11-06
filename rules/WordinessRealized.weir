@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (came to a realization)
+
+let message "Consider using 'realized' instead of 'came to a realization'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "realized"
+
+test "We should came to a realization today." "We should realized today."

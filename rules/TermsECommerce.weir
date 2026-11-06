@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (ecommerce)
+
+let message "Prefer 'e-commerce' over 'ecommerce'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "e-commerce"
+
+test "We should ecommerce today." "We should e-commerce today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (mb)
+
+let message "Prefer 'MB' over 'mb'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "MB"
+
+test "We should mb today." "We should MB today."

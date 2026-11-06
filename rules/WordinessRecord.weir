@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (all-time record)
+
+let message "Consider using 'record' instead of 'all-time record'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "record"
+
+test "We should all-time record today." "We should record today."

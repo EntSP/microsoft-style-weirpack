@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (different to)
+
+let message "Prefer 'different from' over 'different to'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "different from"
+
+test "We should different to today." "We should different from today."

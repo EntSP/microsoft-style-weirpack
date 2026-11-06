@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft GenderBias.yml (MIT).
+# Generated -- see the README.
+
+expr main (woman doctor)
+
+let message "Consider using 'doctor' instead of 'woman doctor'."
+let description "Microsoft Writing Style Guide: GenderBias."
+let kind "Usage"
+let becomes "doctor"
+
+test "We should woman doctor today." "We should doctor today."

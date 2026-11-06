@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (basic necessity)
+
+let message "Consider using 'necessity' instead of 'basic necessity'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "necessity"
+
+test "We should basic necessity today." "We should necessity today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (stylus)
+
+let message "Prefer 'pen' over 'stylus'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "pen"
+
+test "We should stylus today." "We should pen today."

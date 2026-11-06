@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (place an order)
+
+let message "Consider using 'order' instead of 'place an order'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "order"
+
+test "We should place an order today." "We should order today."

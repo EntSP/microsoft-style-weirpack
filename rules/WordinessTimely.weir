@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (in a timely manner)
+
+let message "Consider using 'timely' instead of 'in a timely manner'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "timely"
+
+test "We should in a timely manner today." "We should timely today."

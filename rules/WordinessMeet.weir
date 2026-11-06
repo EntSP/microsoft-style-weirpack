@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (hold a meeting)
+
+let message "Consider using 'meet' instead of 'hold a meeting'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "meet"
+
+test "We should hold a meeting today." "We should meet today."

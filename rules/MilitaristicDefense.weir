@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Militaristic.yml (MIT).
+# Generated -- see the README.
+
+expr main (frontlines)
+
+let message "Consider 'defense' instead of 'frontlines'."
+let description "Microsoft Writing Style Guide: Militaristic."
+let kind "Usage"
+let becomes "defense"
+
+test "We should frontlines today." "We should defense today."

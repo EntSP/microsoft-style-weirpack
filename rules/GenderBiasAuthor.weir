@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft GenderBias.yml (MIT).
+# Generated -- see the README.
+
+expr main (authoress)
+
+let message "Consider using 'author' instead of 'authoress'."
+let description "Microsoft Writing Style Guide: GenderBias."
+let kind "Usage"
+let becomes "author"
+
+test "We should authoress today." "We should author today."

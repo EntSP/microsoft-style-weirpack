@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft GenderBias.yml (MIT).
+# Generated -- see the README.
+
+expr main (man enough)
+
+let message "Consider using 'strong enough' instead of 'man enough'."
+let description "Microsoft Writing Style Guide: GenderBias."
+let kind "Usage"
+let becomes "strong enough"
+
+test "We should man enough today." "We should strong enough today."

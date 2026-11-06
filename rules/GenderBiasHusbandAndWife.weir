@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft GenderBias.yml (MIT).
+# Generated -- see the README.
+
+expr main (man and wife)
+
+let message "Consider using 'husband and wife' instead of 'man and wife'."
+let description "Microsoft Writing Style Guide: GenderBias."
+let kind "Usage"
+let becomes "husband and wife"
+
+test "We should man and wife today." "We should husband and wife today."

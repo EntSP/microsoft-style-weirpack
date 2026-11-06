@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (based in large part on)
+
+let message "Consider using 'based on' instead of 'based in large part on'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "based on"
+
+test "We should based in large part on today." "We should based on today."

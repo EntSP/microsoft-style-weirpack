@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (read-write)
+
+let message "Prefer 'read/write' over 'read-write'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "read/write"
+
+test "We should read-write today." "We should read/write today."

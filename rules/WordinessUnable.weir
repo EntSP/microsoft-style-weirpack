@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (not in a position to)
+
+let message "Consider using 'unable' instead of 'not in a position to'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "unable"
+
+test "We should not in a position to today." "We should unable today."

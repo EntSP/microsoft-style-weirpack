@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Militaristic.yml (MIT).
+# Generated -- see the README.
+
+expr main (defense-in-depth approach)
+
+let message "Consider 'multilayered approach' instead of 'defense-in-depth approach'."
+let description "Microsoft Writing Style Guide: Militaristic."
+let kind "Usage"
+let becomes "multilayered approach"
+
+test "We should defense-in-depth approach today." "We should multilayered approach today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft GenderBias.yml (MIT).
+# Generated -- see the README.
+
+expr main (oneupmanship)
+
+let message "Consider using 'upstaging' instead of 'oneupmanship'."
+let description "Microsoft Writing Style Guide: GenderBias."
+let kind "Usage"
+let becomes "upstaging"
+
+test "We should oneupmanship today." "We should upstaging today."

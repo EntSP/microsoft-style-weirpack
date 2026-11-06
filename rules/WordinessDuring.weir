@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main [(during the period of), (for the duration of)]
+
+let message "Consider using 'during' here."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "during"
+
+test "We should during the period of today." "We should during today."

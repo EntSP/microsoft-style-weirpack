@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (complete stranger)
+
+let message "Consider using 'stranger' instead of 'complete stranger'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "stranger"
+
+test "We should complete stranger today." "We should stranger today."

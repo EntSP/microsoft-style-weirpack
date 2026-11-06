@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (this is a subject that)
+
+let message "Consider using 'this subject' instead of 'this is a subject that'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "this subject"
+
+test "We should this is a subject that today." "We should this subject today."

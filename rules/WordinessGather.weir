@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (gather together)
+
+let message "Consider using 'gather' instead of 'gather together'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "gather"
+
+test "We should gather together today." "We should gather today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (typeface)
+
+let message "Prefer 'font' over 'typeface'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "font"
+
+test "We should typeface today." "We should font today."

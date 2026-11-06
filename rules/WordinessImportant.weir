@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (of major importance)
+
+let message "Consider using 'important' instead of 'of major importance'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "important"
+
+test "We should of major importance today." "We should important today."

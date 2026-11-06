@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (in addition)
+
+let message "Consider using 'also' instead of 'in addition'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "also"
+
+test "We should in addition today." "We should also today."

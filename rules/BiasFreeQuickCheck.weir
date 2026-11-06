@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft BiasFree.yml (MIT).
+# Generated -- see the README.
+
+expr main (sanity check)
+
+let message "Consider 'quick check' instead of 'sanity check'."
+let description "Microsoft Writing Style Guide: BiasFree."
+let kind "Usage"
+let becomes "quick check"
+
+test "We should sanity check today." "We should quick check today."

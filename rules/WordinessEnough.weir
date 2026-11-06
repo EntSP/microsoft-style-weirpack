@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (an adequate number of)
+
+let message "Consider using 'enough' instead of 'an adequate number of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "enough"
+
+test "We should an adequate number of today." "We should enough today."

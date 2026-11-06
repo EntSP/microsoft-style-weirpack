@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (at a later date)
+
+let message "Consider using 'later' instead of 'at a later date'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "later"
+
+test "We should at a later date today." "We should later today."

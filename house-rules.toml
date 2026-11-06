@@ -1,0 +1,875 @@
+# The checks from the Microsoft pack that Weir cannot express, because
+# Weir requires a `becomes` and these cannot say what to write instead.
+#
+# Paste into your markdoc-prose.toml. `%s` is the matched text, `%r` is
+# `becomes`.
+
+
+[[rule]]
+name = "AMPM"
+level = "error"
+message = "Use 'AM' or 'PM' (preceded by a space)."
+patterns = ['\d{1,2}[AP]M', '\d{1,2} ?[ap]m', '\d{1,2} ?[aApP]\.[mM]\.']
+
+[[rule]]
+name = "Accessibility"
+level = "hint"
+message = "Don't use language (such as '%s') that defines people by their disability."
+patterns = ['a victim of', 'able-bodied', 'an epileptic', 'birth defect', 'crippled', 'differently abled', 'disabled', 'dumb', 'handicapped', 'handicaps', 'healthy person', 'hearing-impaired', 'lame', 'maimed', 'mentally handicapped', 'missing a limb', 'mute', 'non-verbal', 'normal person', 'sight-impaired', 'slow learner', 'stricken with', 'suffers from', 'vision-impaired']
+ignore_case = true
+
+[[rule]]
+name = "Adverbs"
+level = "warning"
+message = "Remove '%s' if it's not important to the meaning of the statement."
+patterns = ['abnormally', 'absentmindedly', 'accidentally', 'adventurously', 'anxiously', 'arrogantly', 'awkwardly', 'bashfully', 'beautifully', 'bitterly', 'bleakly', 'blindly', 'blissfully', 'boastfully', 'boldly', 'bravely', 'briefly', 'brightly', 'briskly', 'broadly', 'busily', 'calmly', 'carefully', 'carelessly', 'cautiously', 'cheerfully', 'cleverly', 'closely', 'coaxingly', 'colorfully', 'continually', 'coolly', 'courageously', 'crossly', 'cruelly', 'curiously', 'daintily', 'dearly', 'deceivingly', 'deeply', 'defiantly', 'deliberately', 'delightfully', 'diligently', 'dimly', 'doubtfully', 'dreamily', 'easily', 'effectively', 'elegantly', 'energetically', 'enormously', 'enthusiastically', 'excitedly', 'extremely', 'fairly', 'faithfully', 'famously', 'ferociously', 'fervently', 'fiercely', 'fondly', 'foolishly', 'fortunately', 'frankly', 'frantically', 'freely', 'frenetically', 'frightfully', 'furiously', 'generally', 'generously', 'gently', 'gladly', 'gleefully', 'gracefully', 'gratefully', 'greatly', 'greedily', 'happily', 'hastily', 'healthily', 'heavily', 'helplessly', 'honestly', 'hopelessly', 'hungrily', 'innocently', 'inquisitively', 'intensely', 'intently', 'interestingly', 'inwardly', 'irritably', 'jaggedly', 'jealously', 'jovially', 'joyfully', 'joyously', 'jubilantly', 'judgmentally', 'justly', 'keenly', 'kiddingly', 'kindheartedly', 'knavishly', 'knowingly', 'knowledgeably', 'lazily', 'lightly', 'limply', 'lively', 'loftily', 'longingly', 'loosely', 'loudly', 'lovingly', 'loyally', 'madly', 'majestically', 'meaningfully', 'mechanically', 'merrily', 'miserably', 'mockingly', 'mortally', 'mysteriously', 'naturally', 'nearly', 'neatly', 'nervously', 'nicely', 'noisily', 'obediently', 'obnoxiously', 'oddly', 'offensively', 'optimistically', 'overconfidently', 'painfully', 'partially', 'patiently', 'perfectly', 'playfully', 'politely', 'poorly', 'positively', 'potentially', 'powerfully', 'promptly', 'properly', 'punctually', 'quaintly', 'queasily', 'queerly', 'questionably', 'quickly', 'quietly', 'quirkily', 'quite', 'quizzically', 'randomly', 'rapidly', 'rarely', 'readily', 'really', 'reassuringly', 'recklessly', 'regularly', 'reluctantly', 'repeatedly', 'reproachfully', 'restfully', 'righteously', 'rightfully', 'rigidly', 'roughly', 'rudely', 'safely', 'scarcely', 'scarily', 'searchingly', 'sedately', 'seemingly', 'selfishly', 'separately', 'seriously', 'shakily', 'sharply', 'sheepishly', 'shrilly', 'shyly', 'silently', 'sleepily', 'slowly', 'smoothly', 'softly', 'solemnly', 'solidly', 'speedily', 'stealthily', 'sternly', 'strictly', 'suddenly', 'supposedly', 'surprisingly', 'suspiciously', 'sweetly', 'swiftly', 'sympathetically', 'tenderly', 'tensely', 'terribly', 'thankfully', 'thoroughly', 'thoughtfully', 'tightly', 'tremendously', 'triumphantly', 'truthfully', 'ultimately', 'unabashedly', 'unaccountably', 'unbearably', 'unethically', 'unexpectedly', 'unfortunately', 'unimpressively', 'unnaturally', 'unnecessarily', 'urgently', 'usefully', 'uselessly', 'utterly', 'vacantly', 'vaguely', 'vainly', 'valiantly', 'vastly', 'verbally', 'very', 'viciously', 'victoriously', 'violently', 'vivaciously', 'voluntarily', 'warmly', 'weakly', 'wearily', 'wetly', 'wholly', 'wildly', 'willfully', 'wisely', 'woefully', 'wonderfully', 'worriedly', 'yawningly', 'yearningly', 'yieldingly', 'youthfully', 'zealously', 'zestfully', 'zestily']
+ignore_case = true
+
+[[rule]]
+name = "Auto"
+level = "error"
+message = "In general, don't hyphenate '%s'."
+patterns = ['auto-\w+']
+ignore_case = true
+
+[[rule]]
+name = "Avoid"
+level = "error"
+message = "Don't use '%s'. See the A-Z word list for details."
+patterns = ['abortion', 'and so on', 'app(?:lication)?s? (?:developer|program)', 'app(?:lication)? file', 'backbone', 'backend', 'contiguous selection', 'fubar', 'outdent(?:ing|ed|s)?']
+ignore_case = true
+
+[[rule]]
+name = "BiasFree-DemilitarizedZoneD"
+level = "warning"
+message = "Consider '%r' instead of '%s'."
+patterns = ['(?:demilitarized zone|DMZ)']
+ignore_case = true
+becomes = "perimeter network"
+
+[[rule]]
+name = "Contractions-ItIs"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['it is(?!\.)']
+ignore_case = true
+becomes = "it's"
+
+[[rule]]
+name = "Contractions-ItS"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ["it's(?=\\.)"]
+ignore_case = true
+becomes = "it is"
+
+[[rule]]
+name = "Contractions-ThatIs"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['that is(?![.,])']
+ignore_case = true
+becomes = "that's"
+
+[[rule]]
+name = "Contractions-ThatS"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ["that's(?=\\.)"]
+ignore_case = true
+becomes = "that is"
+
+[[rule]]
+name = "Contractions-TheyAre"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['they are(?!\.)']
+ignore_case = true
+becomes = "they're"
+
+[[rule]]
+name = "Contractions-TheyRe"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ["they're(?=\\.)"]
+ignore_case = true
+becomes = "they are"
+
+[[rule]]
+name = "Contractions-WeAre"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['we are(?!\.)']
+ignore_case = true
+becomes = "we're"
+
+[[rule]]
+name = "Contractions-WeHave"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['we have(?!\.)']
+ignore_case = true
+becomes = "we've"
+
+[[rule]]
+name = "Contractions-WeRe"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ["we're(?=\\.)"]
+ignore_case = true
+becomes = "we are"
+
+[[rule]]
+name = "Contractions-WeVe"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ["we've(?=\\.)"]
+ignore_case = true
+becomes = "we have"
+
+[[rule]]
+name = "Contractions-WhatIs"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['what is(?!\.)']
+ignore_case = true
+becomes = "what's"
+
+[[rule]]
+name = "Contractions-WhatS"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ["what's(?=\\.)"]
+ignore_case = true
+becomes = "what is"
+
+[[rule]]
+name = "Contractions-WhenIs"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['when is(?!\.)']
+ignore_case = true
+becomes = "when's"
+
+[[rule]]
+name = "Contractions-WhenS"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ["when's(?=\\.)"]
+ignore_case = true
+becomes = "when is"
+
+[[rule]]
+name = "Contractions-WhereIs"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['where is(?!\.)']
+ignore_case = true
+becomes = "where's"
+
+[[rule]]
+name = "Contractions-WhereS"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ["where's(?=\\.)"]
+ignore_case = true
+becomes = "where is"
+
+[[rule]]
+name = "Dashes"
+level = "error"
+message = "Remove the spaces around '%s'."
+patterns = ['\s[—–]\s|\s[—–]|[—–]\s']
+ignore_case = true
+
+[[rule]]
+name = "DateFormat"
+level = "error"
+message = "Use 'July 31, 2016' format, not '%s'."
+patterns = ['\d{1,2} (?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?) \d{4}']
+ignore_case = true
+
+[[rule]]
+name = "DateNumbers"
+level = "error"
+message = "Don't use ordinal numbers for dates."
+patterns = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth', 'eleventh', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', 'eighteenth', 'nineteenth', 'twentieth', 'twenty-first', 'twenty-second', 'twenty-third', 'twenty-fourth', 'twenty-fifth', 'twenty-sixth', 'twenty-seventh', 'twenty-eighth', 'twenty-ninth', 'thirtieth', 'thirty-first']
+ignore_case = true
+
+[[rule]]
+name = "DateOrder"
+level = "error"
+message = "Always spell out the name of the month."
+patterns = ['\b\d{1,2}/\d{1,2}/(?:\d{4}|\d{2})\b']
+ignore_case = true
+
+[[rule]]
+name = "Ellipses"
+level = "warning"
+message = "In general, don't use an ellipsis."
+patterns = ['\.\.\.']
+
+[[rule]]
+name = "ExclamationPoints"
+level = "hint"
+message = "Use exclamation points sparingly."
+patterns = ['\w!(?:\s|$)']
+
+[[rule]]
+name = "FirstPerson"
+level = "warning"
+message = "Use first person (such as '%s') sparingly."
+patterns = ['(?<=^|\s)I(?=[\s,])', "\\bI'd\\b", "\\bI'll\\b", "\\bI'm\\b", "\\bI've\\b", '\bme\b', '\bmy\b', '\bmine\b']
+ignore_case = true
+
+[[rule]]
+name = "Foreign-BEgEGS"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['\b(?:eg|e\.g\.)[\s,]']
+ignore_case = true
+becomes = "for example"
+
+[[rule]]
+name = "Foreign-BErgoS"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['\b(?:ergo)[\s,]']
+ignore_case = true
+becomes = "therefore"
+
+[[rule]]
+name = "Foreign-BIeIES"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['\b(?:ie|i\.e\.)[\s,]']
+ignore_case = true
+becomes = "that is"
+
+[[rule]]
+name = "Foreign-BVizS"
+level = "error"
+message = "Use '%r' instead of '%s'."
+patterns = ['\b(?:viz\.)[\s,]']
+ignore_case = true
+becomes = "namely"
+
+[[rule]]
+name = "Gender"
+level = "error"
+message = "Don't use '%s'."
+patterns = ['he/she', 's/he']
+ignore_case = true
+
+[[rule]]
+name = "GenderBias-AirMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['air(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "pilot(s)"
+
+[[rule]]
+name = "GenderBias-AlumnaAlumnus"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['(?:alumna|alumnus)']
+ignore_case = true
+becomes = "graduate"
+
+[[rule]]
+name = "GenderBias-AlumnaeAlumni"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['(?:alumnae|alumni)']
+ignore_case = true
+becomes = "graduates"
+
+[[rule]]
+name = "GenderBias-AnchorMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['anchor(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "anchor(s)"
+
+[[rule]]
+name = "GenderBias-CameraMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['camera(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "camera operator(s)"
+
+[[rule]]
+name = "GenderBias-ChairMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['chair(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "chair"
+
+[[rule]]
+name = "GenderBias-DoorMAeWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['door(?:m[ae]|wom[ae]n)']
+ignore_case = true
+becomes = "concierge(s)"
+
+[[rule]]
+name = "GenderBias-DraftMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['draft(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "drafter(s)"
+
+[[rule]]
+name = "GenderBias-FireMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['fire(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "firefighter(s)"
+
+[[rule]]
+name = "GenderBias-FisherMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['fisher(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "fisher(s)"
+
+[[rule]]
+name = "GenderBias-FreshMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['fresh(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "first-year student(s)"
+
+[[rule]]
+name = "GenderBias-GarbageMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['garbage(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "waste collector(s)"
+
+[[rule]]
+name = "GenderBias-MailMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['mail(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "mail carriers"
+
+[[rule]]
+name = "GenderBias-MiddleMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['middle(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "intermediary"
+
+[[rule]]
+name = "GenderBias-NewsMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['news(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "journalist(s)"
+
+[[rule]]
+name = "GenderBias-OmbudsManWoman"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['ombuds(?:man|woman)']
+ignore_case = true
+becomes = "ombuds"
+
+[[rule]]
+name = "GenderBias-PoliceMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['police(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "police officer(s)"
+
+[[rule]]
+name = "GenderBias-RepairMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['repair(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "technician(s)"
+
+[[rule]]
+name = "GenderBias-SalesMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['sales(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "salesperson or sales people"
+
+[[rule]]
+name = "GenderBias-ServiceMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['service(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "soldier(s)"
+
+[[rule]]
+name = "GenderBias-StewardEss"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['steward(?:ess)?']
+ignore_case = true
+becomes = "flight attendant"
+
+[[rule]]
+name = "GenderBias-TribesMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['tribes(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "tribe member(s)"
+
+[[rule]]
+name = "GenderBias-WomanScientistS"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['woman scientist[s]?']
+ignore_case = true
+becomes = "scientist(s)"
+
+[[rule]]
+name = "GenderBias-WorkMAeNWomAeN"
+level = "error"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['work(?:m[ae]n|wom[ae]n)']
+ignore_case = true
+becomes = "worker(s)"
+
+[[rule]]
+name = "GeneralURL"
+level = "warning"
+message = "For a general audience, use 'address' rather than 'URL'."
+patterns = ['URL']
+
+[[rule]]
+name = "HeadingAcronyms"
+level = "warning"
+message = "Avoid using acronyms in a title or heading."
+patterns = ['[A-Z]{2,4}']
+
+[[rule]]
+name = "HeadingColons"
+level = "error"
+message = "Capitalize '%s'."
+patterns = [':\s[a-z]']
+
+[[rule]]
+name = "HeadingPunctuation"
+level = "warning"
+message = "Don't use end punctuation in headings."
+patterns = ['[a-z][.?!]$']
+
+[[rule]]
+name = "Hyphens"
+level = "warning"
+message = "'%s' doesn't need a hyphen."
+patterns = ['\b[^\s-]+ly-\w+\b']
+
+[[rule]]
+name = "Militaristic-CyberKillChain"
+level = "hint"
+message = "Consider '%r' instead of '%s'."
+patterns = ['(?:cyber ?)?kill chain']
+ignore_case = true
+becomes = "cyberattack chain"
+
+[[rule]]
+name = "Negative"
+level = "error"
+message = "Form a negative number with an en dash, not a hyphen."
+patterns = ['(?<=\s)-\d+(?:\.\d+)?\b']
+
+[[rule]]
+name = "Ordinal"
+level = "error"
+message = "Don't add -ly to an ordinal number."
+patterns = ['firstly', 'secondly', 'thirdly']
+ignore_case = true
+
+[[rule]]
+name = "OxfordComma"
+level = "hint"
+message = "Use the Oxford comma in '%s'."
+patterns = ['(?<!\w)(?:(?!(?i:which|who|whom|whose|that|where|when|while|because|since|although|though|if|unless|so|but|and|or|however|therefore|thus|specifically|especially|namely|then|either|neither|such|with|without|between|among|including|example|plug|lift|remove|install|connect|disconnect|check|open|close|press|turn|place|pull|push|replace|select|locate|wipe|fasten|loosen|tighten|mount|insert|slide|set|put|move|raise|lower|hold|release|attach|detach|align|adjust|clean|apply|wait|start|stop|test|follow|ensure|verify|confirm|unplug|unscrew|position|rest|restart|reinstall|reconnect|reassemble|make|take|see|note|consider|use|get|keep|leave|let|allow|find|look|read|write|run|try|is|are|was|were|has|have|had|be|been|being|will|would|can|could|should|may|might|must|do|does|did|in|on|off|of|for|to|from|into|onto|by|as|over|under|at|via|per|through|across|around|about|within|upon|out|up|down|than|like)\b)\w+(?: (?!(?i:and|or|is|are|was|were|has|have|had|be|been|being|will|would|can|could|should|may|might|must|do|does|did|in|on|off|of|for|to|from|with|without|between|among|into|onto|by|as|such|over|under|at|via|per|including|through|across|around|about|within|upon|out|up|down|than|like)\b)\w+){1,3}|(?!(?i:which|who|whom|whose|that|where|when|while|because|since|although|though|if|unless|so|but|and|or|however|therefore|thus|specifically|especially|namely|then|either|neither|such|with|without|between|among|including|example|is|are|was|were|has|have|had|be|been|being|will|would|can|could|should|may|might|must|do|does|did)\b)\w+)(?<!^(?i:when|whenever|while|if|unless|until|although|though|because|since|after|before|once|whereas|whether|as)\b[^,]{0,80}),\s(?!(?i:i|you|we|they|he|she|it)\s+(?!(?:and|or)\b))(?:(?!(?i:which|who|whom|whose|that|where|when|while|because|since|although|though|if|unless|so|but|and|or|however|therefore|thus|specifically|especially|namely|then|either|neither|such|with|without|between|among|including|example|plug|lift|remove|install|connect|disconnect|check|open|close|press|turn|place|pull|push|replace|select|locate|wipe|fasten|loosen|tighten|mount|insert|slide|set|put|move|raise|lower|hold|release|attach|detach|align|adjust|clean|apply|wait|start|stop|test|follow|ensure|verify|confirm|unplug|unscrew|position|rest|restart|reinstall|reconnect|reassemble|make|take|see|note|consider|use|get|keep|leave|let|allow|find|look|read|write|run|try|is|are|was|were|has|have|had|be|been|being|will|would|can|could|should|may|might|must|do|does|did|in|on|off|of|for|to|from|into|onto|by|as|over|under|at|via|per|through|across|around|about|within|upon|out|up|down|than|like)\b)\w+(?: (?!(?i:and|or|is|are|was|were|has|have|had|be|been|being|will|would|can|could|should|may|might|must|do|does|did|in|on|off|of|for|to|from|with|without|between|among|into|onto|by|as|such|over|under|at|via|per|including|through|across|around|about|within|upon|out|up|down|than|like)\b)\w+){1,3}|(?!(?i:which|who|whom|whose|that|where|when|while|because|since|although|though|if|unless|so|but|and|or|however|therefore|thus|specifically|especially|namely|then|either|neither|such|with|without|between|among|including|example|is|are|was|were|has|have|had|be|been|being|will|would|can|could|should|may|might|must|do|does|did)\b)\w+) (?:and |or (?!(?i:not)\b))(?:(?!(?i:and|or|is|are|was|were|has|have|had|be|been|being|will|would|can|could|should|may|might|must|do|does|did|in|on|off|of|for|to|from|with|without|between|among|into|onto|by|as|such|over|under|at|via|per|including|through|across|around|about|within|upon|out|up|down|than|like)\b)\w+ ){0,3}(?!(?i:and|or|is|are|was|were|has|have|had|be|been|being|will|would|can|could|should|may|might|must|do|does|did|in|on|off|of|for|to|from|with|without|between|among|into|onto|by|as|such|over|under|at|via|per|including|through|across|around|about|within|upon|out|up|down|than|like)\b)\w+[.?!]']
+
+[[rule]]
+name = "Passive"
+level = "hint"
+message = "'%s' looks like passive voice."
+patterns = ['[\w]+ed', 'awoken', 'beat', 'become', 'been', 'begun', 'bent', 'beset', 'bet', 'bid', 'bidden', 'bitten', 'bled', 'blown', 'born', 'bought', 'bound', 'bred', 'broadcast', 'broken', 'brought', 'built', 'burnt', 'burst', 'cast', 'caught', 'chosen', 'clung', 'come', 'cost', 'crept', 'cut', 'dealt', 'dived', 'done', 'drawn', 'dreamt', 'driven', 'drunk', 'dug', 'eaten', 'fallen', 'fed', 'felt', 'fit', 'fled', 'flown', 'flung', 'forbidden', 'foregone', 'forgiven', 'forgotten', 'forsaken', 'fought', 'found', 'frozen', 'given', 'gone', 'gotten', 'ground', 'grown', 'heard', 'held', 'hidden', 'hit', 'hung', 'hurt', 'kept', 'knelt', 'knit', 'known', 'laid', 'lain', 'leapt', 'learnt', 'led', 'left', 'lent', 'let', 'lighted', 'lost', 'made', 'meant', 'met', 'misspelt', 'mistaken', 'mown', 'overcome', 'overdone', 'overtaken', 'overthrown', 'paid', 'pled', 'proven', 'put', 'quit', 'read', 'rid', 'ridden', 'risen', 'run', 'rung', 'said', 'sat', 'sawn', 'seen', 'sent', 'set', 'sewn', 'shaken', 'shaven', 'shed', 'shod', 'shone', 'shorn', 'shot', 'shown', 'shrunk', 'shut', 'slain', 'slept', 'slid', 'slit', 'slung', 'smitten', 'sold', 'sought', 'sown', 'sped', 'spent', 'spilt', 'spit', 'split', 'spoken', 'spread', 'sprung', 'spun', 'stolen', 'stood', 'stridden', 'striven', 'struck', 'strung', 'stuck', 'stung', 'stunk', 'sung', 'sunk', 'swept', 'swollen', 'sworn', 'swum', 'swung', 'taken', 'taught', 'thought', 'thrived', 'thrown', 'thrust', 'told', 'torn', 'trodden', 'understood', 'upheld', 'upset', 'wed', 'wept', 'withheld', 'withstood', 'woken', 'won', 'worn', 'wound', 'woven', 'written', 'wrung']
+ignore_case = true
+
+[[rule]]
+name = "Percentages"
+level = "error"
+message = "Use a numeral plus the units."
+patterns = ['\b[a-zA-z]+\spercent\b']
+
+[[rule]]
+name = "QuestionMarks"
+level = "hint"
+message = "Use questions sparingly."
+patterns = ['\w\?(?:\s|$)']
+
+[[rule]]
+name = "Quotes"
+level = "error"
+message = "Punctuation should be inside the quotes."
+patterns = ['["“][^"”“]+["”][.,]']
+
+[[rule]]
+name = "RangeTime"
+level = "error"
+message = "Use 'to' instead of a dash in '%s'."
+patterns = ['\b(?:AM|PM)\s?[-–]\s?.+(?:AM|PM)\b']
+
+[[rule]]
+name = "Semicolon"
+level = "hint"
+message = "Try to simplify this sentence."
+patterns = [';']
+
+[[rule]]
+name = "Spacing"
+level = "error"
+message = "'%s' should have one space."
+patterns = ['[a-z][.?!] {2,}[A-Z]', '\b[a-z]\w*\.[A-Z]', '\w[?!][A-Z]']
+
+[[rule]]
+name = "Suspended"
+level = "warning"
+message = "Don't use '%s' unless space is limited."
+patterns = ['\w+- and \w+-']
+ignore_case = true
+
+[[rule]]
+name = "Terms-1200Midnight"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['12:00 midnight']
+ignore_case = true
+becomes = "midnight"
+
+[[rule]]
+name = "Terms-1200Noon"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['12:00 noon']
+ignore_case = true
+becomes = "noon"
+
+[[rule]]
+name = "Terms-AgentVirtualAssist"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:agent|virtual assistant|intelligent personal assistant)']
+ignore_case = true
+becomes = "personal digital assistant"
+
+[[rule]]
+name = "Terms-AssemblerMachineLa"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:assembler|machine language)']
+ignore_case = true
+becomes = "assembly language"
+
+[[rule]]
+name = "Terms-AudioBook"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['audio(?:-| )book']
+ignore_case = true
+becomes = "audiobook"
+
+[[rule]]
+name = "Terms-BackLight"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['back(?:-| )light']
+ignore_case = true
+becomes = "backlight"
+
+[[rule]]
+name = "Terms-BoldedBoldfacedBol"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:bolded|boldfaced|boldface)']
+ignore_case = true
+becomes = "bold"
+
+[[rule]]
+name = "Terms-ChatBots"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['chat bots?']
+ignore_case = true
+becomes = "chatbot(s)"
+
+[[rule]]
+name = "Terms-CommandOptionActio"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:command|option|action) button']
+ignore_case = true
+becomes = "button"
+
+[[rule]]
+name = "Terms-DisplayGraphicsDri"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:display|graphics) driver']
+ignore_case = true
+becomes = "video driver"
+
+[[rule]]
+name = "Terms-DriveCDriveCCDrive"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:drive C:|drive C>|C: drive)']
+ignore_case = true
+becomes = "drive C"
+
+[[rule]]
+name = "Terms-EndUserLicenseAgre"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:end-user license agreement|EULA)']
+ignore_case = true
+becomes = "Microsoft Software License Terms"
+
+[[rule]]
+name = "Terms-GraphicsCardBoard"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['graphics (?:card|board)']
+ignore_case = true
+becomes = "video card"
+
+[[rule]]
+name = "Terms-InternetBotWebRobo"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:internet bot|web robot)s?']
+ignore_case = true
+becomes = "bot(s)"
+
+[[rule]]
+name = "Terms-ItalicSIzed"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['italic(?:s|ized)']
+ignore_case = true
+becomes = "italic"
+
+[[rule]]
+name = "Terms-KByteKByte"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:K byte|KByte)']
+ignore_case = true
+becomes = "KB"
+
+[[rule]]
+name = "Terms-MaximizeBoxIcon"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['maximize (?:box|icon)']
+ignore_case = true
+becomes = "Maximize button"
+
+[[rule]]
+name = "Terms-MicrosoftCloudTheC"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:microsoft cloud|the cloud)']
+ignore_case = true
+becomes = "cloud"
+
+[[rule]]
+name = "Terms-MicrosoftRecommend"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:microsoft recommends|it is recommended)']
+ignore_case = true
+becomes = "we recommend"
+
+[[rule]]
+name = "Terms-MinimizeBoxIcon"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['minimize (?:box|icon)']
+ignore_case = true
+becomes = "Minimize button"
+
+[[rule]]
+name = "Terms-MobileSmartPhone"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:mobile|smart) ?phone']
+ignore_case = true
+becomes = "phone"
+
+[[rule]]
+name = "Terms-OkayAllRightAlrigh"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:okay|all right|alright)']
+ignore_case = true
+becomes = "OK"
+
+[[rule]]
+name = "Terms-PopUpWindowDialogu"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:pop-up window|dialogue box)']
+ignore_case = true
+becomes = "dialog box"
+
+[[rule]]
+name = "Terms-VideoDisplayGraphi"
+level = "warning"
+message = "Prefer '%r' over '%s'."
+patterns = ['(?:video|display|graphics) adapter']
+ignore_case = true
+becomes = "video card"
+
+[[rule]]
+name = "UIVerbs"
+level = "warning"
+message = "Use 'select' instead of the input-specific verb '%s'."
+patterns = ['(?<!right-)(?<!double-)click(?:s|ed|ing)?(?: on)?', 'swipe(?:s|d|ing)?']
+ignore_case = true
+
+[[rule]]
+name = "Units"
+level = "error"
+message = "Don't spell out the number in '%s'."
+patterns = ['(?:centi|milli)?meters', '(?:kilo)?grams', '(?:kilo)?meters', '(?:mega)?pixels', 'cm', 'inches', 'lb', 'miles', 'pounds']
+ignore_case = true
+
+[[rule]]
+name = "Uppercase"
+level = "hint"
+message = "Don't use all uppercase for emphasis."
+patterns = ['\b[A-Z]{2,}(?: [A-Z]{2,})+\b']
+
+[[rule]]
+name = "Vocab"
+level = "hint"
+message = "Verify your use of '%s' with the A-Z word list."
+patterns = ['above', 'accessible', 'actionable', 'against', 'alarm', 'alert', 'alias', 'allows?', 'and/or', 'as well as', 'assure', 'author', 'avg', 'beta', 'ensure', 'he', 'insure', 'sample', 'set (?:a|an|the|your)', 'she', 'specify']
+ignore_case = true
+
+[[rule]]
+name = "We"
+level = "warning"
+message = "Try to avoid using first-person plural like '%s'."
+patterns = ['we', "we'(?:ve|re)", 'ours?', 'us', "let's"]
+ignore_case = true
+
+[[rule]]
+name = "Wordiness-ALargeMajorityOf"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['a (?:large)? majority of']
+ignore_case = true
+becomes = "most"
+
+[[rule]]
+name = "Wordiness-ALargeNumberOf"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['a (?:large)? number of']
+ignore_case = true
+becomes = "many"
+
+[[rule]]
+name = "Wordiness-AllOfASuddenThese"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['all of(?! a sudden| these)']
+ignore_case = true
+becomes = "all"
+
+[[rule]]
+name = "Wordiness-ExtractTakeAwayEli"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['(?:extract|take away|eliminate)']
+ignore_case = true
+becomes = "remove"
+
+[[rule]]
+name = "Wordiness-InOrderToAsAMeansT"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['(?:in order to|as a means to)']
+ignore_case = true
+becomes = "to"
+
+[[rule]]
+name = "Wordiness-InTheVeryNearFutur"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['in the (?:very)? near future']
+ignore_case = true
+becomes = "soon"
+
+[[rule]]
+name = "Wordiness-InformLetMeKnow"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['(?:inform|let me know)']
+ignore_case = true
+becomes = "tell"
+
+[[rule]]
+name = "Wordiness-PreviousPriorTo"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['(?:previous|prior) to']
+ignore_case = true
+becomes = "before"
+
+[[rule]]
+name = "Wordiness-SufficientNumberOf"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['sufficient number(?: of)?']
+ignore_case = true
+becomes = "enough"
+
+[[rule]]
+name = "Wordiness-TimeFramePeriod"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['time (?:frame|period)']
+ignore_case = true
+becomes = "time"
+
+[[rule]]
+name = "Wordiness-UtilizeMakeUseOf"
+level = "hint"
+message = "Consider using '%r' instead of '%s'."
+patterns = ['(?:utilize|make use of)']
+ignore_case = true
+becomes = "use"

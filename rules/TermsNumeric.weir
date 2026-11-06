@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (numerical)
+
+let message "Prefer 'numeric' over 'numerical'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "numeric"
+
+test "We should numerical today." "We should numeric today."

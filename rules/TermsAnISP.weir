@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (a ISP)
+
+let message "Prefer 'an ISP' over 'a ISP'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "an ISP"
+
+test "We should a ISP today." "We should an ISP today."

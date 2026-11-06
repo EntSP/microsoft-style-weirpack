@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (during the time that)
+
+let message "Consider using 'while' instead of 'during the time that'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "while"
+
+test "We should during the time that today." "We should while today."

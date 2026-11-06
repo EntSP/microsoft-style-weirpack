@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (mobile computer)
+
+let message "Prefer 'computer' over 'mobile computer'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "computer"
+
+test "We should mobile computer today." "We should computer today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft URLFormat.yml (MIT).
+# Generated -- see the README.
+
+expr main (URL for)
+
+let message "Use 'of' (not 'for') to describe the relationship of the word URL to a resource."
+let description "Microsoft Writing Style Guide: URLFormat."
+let kind "Usage"
+let becomes "URL of"
+
+test "We should URL for today." "We should URL of today."

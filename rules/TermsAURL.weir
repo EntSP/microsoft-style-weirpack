@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (an URL)
+
+let message "Prefer 'a URL' over 'an URL'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "a URL"
+
+test "We should an URL today." "We should a URL today."

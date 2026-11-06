@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (appendixes)
+
+let message "Prefer 'appendices' over 'appendixes'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "appendices"
+
+test "We should appendixes today." "We should appendices today."

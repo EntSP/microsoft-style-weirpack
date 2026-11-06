@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (take action)
+
+let message "Consider using 'act' instead of 'take action'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "act"
+
+test "We should take action today." "We should act today."

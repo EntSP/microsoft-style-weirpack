@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (kb)
+
+let message "Prefer 'KB' over 'kb'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "KB"
+
+test "We should kb today." "We should KB today."

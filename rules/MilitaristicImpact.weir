@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Militaristic.yml (MIT).
+# Generated -- see the README.
+
+expr main (blast radius)
+
+let message "Consider 'impact' instead of 'blast radius'."
+let description "Microsoft Writing Style Guide: Militaristic."
+let kind "Usage"
+let becomes "impact"
+
+test "We should blast radius today." "We should impact today."

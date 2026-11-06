@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (has the opportunity to)
+
+let message "Consider using 'could' instead of 'has the opportunity to'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "could"
+
+test "We should has the opportunity to today." "We should could today."

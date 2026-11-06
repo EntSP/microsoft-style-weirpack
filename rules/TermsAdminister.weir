@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (administrate)
+
+let message "Prefer 'administer' over 'administrate'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "administer"
+
+test "We should administrate today." "We should administer today."

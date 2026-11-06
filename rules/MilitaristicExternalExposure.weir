@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Militaristic.yml (MIT).
+# Generated -- see the README.
+
+expr main (external attack surface)
+
+let message "Consider 'external exposure' instead of 'external attack surface'."
+let description "Microsoft Writing Style Guide: Militaristic."
+let kind "Usage"
+let becomes "external exposure"
+
+test "We should external attack surface today." "We should external exposure today."

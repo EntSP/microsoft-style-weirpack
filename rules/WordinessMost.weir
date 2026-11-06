@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (almost all)
+
+let message "Consider using 'most' instead of 'almost all'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "most"
+
+test "We should almost all today." "We should most today."

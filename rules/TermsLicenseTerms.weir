@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (licensing terms)
+
+let message "Prefer 'license terms' over 'licensing terms'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "license terms"
+
+test "We should licensing terms today." "We should license terms today."

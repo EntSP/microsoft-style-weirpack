@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (lowercased)
+
+let message "Prefer 'lowercase' over 'lowercased'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "lowercase"
+
+test "We should lowercased today." "We should lowercase today."

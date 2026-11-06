@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (along the lines of)
+
+let message "Consider using 'similar to' instead of 'along the lines of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "similar to"
+
+test "We should along the lines of today." "We should similar to today."

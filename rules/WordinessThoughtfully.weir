@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (in a thoughtful manner)
+
+let message "Consider using 'thoughtfully' instead of 'in a thoughtful manner'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "thoughtfully"
+
+test "We should in a thoughtful manner today." "We should thoughtfully today."

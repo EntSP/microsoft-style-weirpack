@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (videoconference)
+
+let message "Prefer 'video call' over 'videoconference'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "video call"
+
+test "We should videoconference today." "We should video call today."

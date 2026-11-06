@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (esports)
+
+let message "Prefer 'e-sports' over 'esports'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "e-sports"
+
+test "We should esports today." "We should e-sports today."

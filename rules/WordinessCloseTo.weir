@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (in the vicinity of)
+
+let message "Consider using 'close to' instead of 'in the vicinity of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "close to"
+
+test "We should in the vicinity of today." "We should close to today."

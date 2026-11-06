@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Jargon.yml (MIT).
+# Generated -- see the README.
+
+expr main (leverage)
+
+let message "Consider using 'take advantage of' instead of the jargon 'leverage'."
+let description "Microsoft Writing Style Guide: Jargon."
+let kind "Style"
+let becomes "take advantage of"
+
+test "We should leverage today." "We should take advantage of today."

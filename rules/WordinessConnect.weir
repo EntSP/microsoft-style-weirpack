@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (establish connectivity)
+
+let message "Consider using 'connect' instead of 'establish connectivity'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "connect"
+
+test "We should establish connectivity today." "We should connect today."

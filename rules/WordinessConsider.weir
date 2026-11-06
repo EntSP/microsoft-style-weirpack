@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (take into account)
+
+let message "Consider using 'consider' instead of 'take into account'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "consider"
+
+test "We should take into account today." "We should consider today."

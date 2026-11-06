@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (in many cases)
+
+let message "Consider using 'often' instead of 'in many cases'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "often"
+
+test "We should in many cases today." "We should often today."

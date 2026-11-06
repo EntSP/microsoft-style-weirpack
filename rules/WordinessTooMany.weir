@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (excessive number)
+
+let message "Consider using 'too many' instead of 'excessive number'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "too many"
+
+test "We should excessive number today." "We should too many today."

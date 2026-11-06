@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (used for fuel purposes)
+
+let message "Consider using 'used for fuel' instead of 'used for fuel purposes'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "used for fuel"
+
+test "We should used for fuel purposes today." "We should used for fuel today."

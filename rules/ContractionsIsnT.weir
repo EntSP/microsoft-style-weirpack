@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Contractions.yml (MIT).
+# Generated -- see the README.
+
+expr main (is not)
+
+let message "Use 'isn't' instead of 'is not'."
+let description "Microsoft Writing Style Guide: Contractions."
+let kind "Style"
+let becomes "isn't"
+
+test "We should is not today." "We should isn't today."

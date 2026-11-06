@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (as per)
+
+let message "Consider using 'per' instead of 'as per'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "per"
+
+test "We should as per today." "We should per today."

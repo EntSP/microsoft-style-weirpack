@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (mix together)
+
+let message "Consider using 'mix' instead of 'mix together'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "mix"
+
+test "We should mix together today." "We should mix today."

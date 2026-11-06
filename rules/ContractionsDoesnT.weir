@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Contractions.yml (MIT).
+# Generated -- see the README.
+
+expr main (does not)
+
+let message "Use 'doesn't' instead of 'does not'."
+let description "Microsoft Writing Style Guide: Contractions."
+let kind "Style"
+let becomes "doesn't"
+
+test "We should does not today." "We should doesn't today."

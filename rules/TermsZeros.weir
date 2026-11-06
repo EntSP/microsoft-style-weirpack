@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (zeroes)
+
+let message "Prefer 'zeros' over 'zeroes'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "zeros"
+
+test "We should zeroes today." "We should zeros today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (successfully complete)
+
+let message "Consider using 'complete' instead of 'successfully complete'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "complete"
+
+test "We should successfully complete today." "We should complete today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Militaristic.yml (MIT).
+# Generated -- see the README.
+
+expr main [(first line of defense), (fortifications)]
+
+let message "Consider 'protection' here."
+let description "Microsoft Writing Style Guide: Militaristic."
+let kind "Usage"
+let becomes "protection"
+
+test "We should first line of defense today." "We should protection today."

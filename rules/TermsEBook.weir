@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (ebook)
+
+let message "Prefer 'e-book' over 'ebook'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "e-book"
+
+test "We should ebook today." "We should e-book today."

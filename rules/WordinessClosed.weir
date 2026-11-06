@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (closed down)
+
+let message "Consider using 'closed' instead of 'closed down'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "closed"
+
+test "We should closed down today." "We should closed today."

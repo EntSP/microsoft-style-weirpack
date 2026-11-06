@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (wireless phone)
+
+let message "Prefer 'phone' over 'wireless phone'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "phone"
+
+test "We should wireless phone today." "We should phone today."

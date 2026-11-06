@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft GenderBias.yml (MIT).
+# Generated -- see the README.
+
+expr main (mankind)
+
+let message "Consider using 'humankind' instead of 'mankind'."
+let description "Microsoft Writing Style Guide: GenderBias."
+let kind "Usage"
+let becomes "humankind"
+
+test "We should mankind today." "We should humankind today."

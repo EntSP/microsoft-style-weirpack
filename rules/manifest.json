@@ -1,0 +1,7 @@
+{
+  "author": "markdoc-tools contributors, after vale-cli/Microsoft",
+  "version": "0.1.0",
+  "description": "Microsoft Writing Style Guide corrections, as Weir rules.",
+  "license": "MIT",
+  "website": "https://github.com/vale-cli/Microsoft"
+}

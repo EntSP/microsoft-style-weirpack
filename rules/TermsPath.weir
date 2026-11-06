@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (pathname)
+
+let message "Prefer 'path' over 'pathname'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "path"
+
+test "We should pathname today." "We should path today."

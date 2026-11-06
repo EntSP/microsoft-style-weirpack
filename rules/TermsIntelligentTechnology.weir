@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (smart technology)
+
+let message "Prefer 'intelligent technology' over 'smart technology'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "intelligent technology"
+
+test "We should smart technology today." "We should intelligent technology today."

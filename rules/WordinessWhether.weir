@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main [(the question as to whether), (whether or not)]
+
+let message "Consider using 'whether' here."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "whether"
+
+test "We should the question as to whether today." "We should whether today."

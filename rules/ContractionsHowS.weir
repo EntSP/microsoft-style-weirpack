@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Contractions.yml (MIT).
+# Generated -- see the README.
+
+expr main (how is)
+
+let message "Use 'how's' instead of 'how is'."
+let description "Microsoft Writing Style Guide: Contractions."
+let kind "Style"
+let becomes "how's"
+
+test "We should how is today." "We should how's today."

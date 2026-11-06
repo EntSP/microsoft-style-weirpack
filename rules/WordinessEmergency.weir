@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (emergency situation)
+
+let message "Consider using 'emergency' instead of 'emergency situation'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "emergency"
+
+test "We should emergency situation today." "We should emergency today."

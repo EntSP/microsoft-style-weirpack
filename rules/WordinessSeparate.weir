@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (completely separate)
+
+let message "Consider using 'separate' instead of 'completely separate'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "separate"
+
+test "We should completely separate today." "We should separate today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (core document)
+
+let message "Prefer 'main document' over 'core document'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "main document"
+
+test "We should core document today." "We should main document today."

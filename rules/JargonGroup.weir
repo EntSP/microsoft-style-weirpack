@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Jargon.yml (MIT).
+# Generated -- see the README.
+
+expr main (bucketize)
+
+let message "Consider using 'group' instead of the jargon 'bucketize'."
+let description "Microsoft Writing Style Guide: Jargon."
+let kind "Style"
+let becomes "group"
+
+test "We should bucketize today." "We should group today."

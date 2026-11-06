@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft GenderBias.yml (MIT).
+# Generated -- see the README.
+
+expr main (lady lawyer)
+
+let message "Consider using 'lawyer' instead of 'lady lawyer'."
+let description "Microsoft Writing Style Guide: GenderBias."
+let kind "Usage"
+let becomes "lawyer"
+
+test "We should lady lawyer today." "We should lawyer today."

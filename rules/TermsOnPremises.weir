@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (on-premise)
+
+let message "Prefer 'on-premises' over 'on-premise'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "on-premises"
+
+test "We should on-premise today." "We should on-premises today."

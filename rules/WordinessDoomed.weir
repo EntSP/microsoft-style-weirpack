@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (doomed to fail)
+
+let message "Consider using 'doomed' instead of 'doomed to fail'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "doomed"
+
+test "We should doomed to fail today." "We should doomed today."

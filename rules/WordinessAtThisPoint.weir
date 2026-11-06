@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (at this point in time)
+
+let message "Consider using 'at this point' instead of 'at this point in time'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "at this point"
+
+test "We should at this point in time today." "We should at this point today."

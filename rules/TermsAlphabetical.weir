@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (alphabetic)
+
+let message "Prefer 'alphabetical' over 'alphabetic'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "alphabetical"
+
+test "We should alphabetic today." "We should alphabetical today."

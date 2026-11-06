@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (gbps)
+
+let message "Prefer 'Gbps' over 'gbps'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "Gbps"
+
+test "We should gbps today." "We should Gbps today."

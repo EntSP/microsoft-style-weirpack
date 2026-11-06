@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (alphanumerical)
+
+let message "Prefer 'alphanumeric' over 'alphanumerical'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "alphanumeric"
+
+test "We should alphanumerical today." "We should alphanumeric today."

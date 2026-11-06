@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Contractions.yml (MIT).
+# Generated -- see the README.
+
+expr main (are not)
+
+let message "Use 'aren't' instead of 'are not'."
+let description "Microsoft Writing Style Guide: Contractions."
+let kind "Style"
+let becomes "aren't"
+
+test "We should are not today." "We should aren't today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (conduct experiments)
+
+let message "Consider using 'experiment' instead of 'conduct experiments'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "experiment"
+
+test "We should conduct experiments today." "We should experiment today."

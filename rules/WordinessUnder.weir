@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (under the provisions of)
+
+let message "Consider using 'under' instead of 'under the provisions of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "under"
+
+test "We should under the provisions of today." "We should under today."

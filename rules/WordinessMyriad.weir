@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (a myriad of)
+
+let message "Consider using 'myriad' instead of 'a myriad of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "myriad"
+
+test "We should a myriad of today." "We should myriad today."

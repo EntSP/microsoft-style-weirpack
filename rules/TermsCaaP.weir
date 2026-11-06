@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (caap)
+
+let message "Prefer 'CaaP' over 'caap'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "CaaP"
+
+test "We should caap today." "We should CaaP today."

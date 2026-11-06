@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (insertion point)
+
+let message "Prefer 'pointer' over 'insertion point'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "pointer"
+
+test "We should insertion point today." "We should pointer today."

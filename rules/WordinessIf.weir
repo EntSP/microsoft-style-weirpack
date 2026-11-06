@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (in the event that)
+
+let message "Consider using 'if' instead of 'in the event that'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "if"
+
+test "We should in the event that today." "We should if today."

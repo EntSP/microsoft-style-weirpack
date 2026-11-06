@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (until such time as)
+
+let message "Consider using 'until' instead of 'until such time as'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "until"
+
+test "We should until such time as today." "We should until today."

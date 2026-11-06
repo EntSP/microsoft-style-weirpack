@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (adaptor)
+
+let message "Prefer 'adapter' over 'adaptor'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "adapter"
+
+test "We should adaptor today." "We should adapter today."

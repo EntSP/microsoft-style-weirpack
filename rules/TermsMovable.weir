@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (moveable)
+
+let message "Prefer 'movable' over 'moveable'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "movable"
+
+test "We should moveable today." "We should movable today."

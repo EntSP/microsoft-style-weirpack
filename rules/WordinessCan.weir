@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main [(has the ability to), (has the capacity to)]
+
+let message "Consider using 'can' here."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "can"
+
+test "We should has the ability to today." "We should can today."

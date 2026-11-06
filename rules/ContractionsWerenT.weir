@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Contractions.yml (MIT).
+# Generated -- see the README.
+
+expr main (were not)
+
+let message "Use 'weren't' instead of 'were not'."
+let description "Microsoft Writing Style Guide: Contractions."
+let kind "Style"
+let becomes "weren't"
+
+test "We should were not today." "We should weren't today."

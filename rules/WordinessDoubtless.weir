@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (there is no doubt but that)
+
+let message "Consider using 'doubtless' instead of 'there is no doubt but that'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "doubtless"
+
+test "We should there is no doubt but that today." "We should doubtless today."

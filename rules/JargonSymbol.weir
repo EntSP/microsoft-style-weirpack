@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Jargon.yml (MIT).
+# Generated -- see the README.
+
+expr main (glyph)
+
+let message "Consider using 'symbol' instead of the jargon 'glyph'."
+let description "Microsoft Writing Style Guide: Jargon."
+let kind "Style"
+let becomes "symbol"
+
+test "We should glyph today." "We should symbol today."

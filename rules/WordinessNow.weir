@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main [(at the present time), (present time)]
+
+let message "Consider using 'now' here."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "now"
+
+test "We should at the present time today." "We should now today."

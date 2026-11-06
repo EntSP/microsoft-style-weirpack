@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (carry out an evaluation of)
+
+let message "Consider using 'evaluate' instead of 'carry out an evaluation of'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "evaluate"
+
+test "We should carry out an evaluation of today." "We should evaluate today."

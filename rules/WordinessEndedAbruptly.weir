@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (came to an abrupt end)
+
+let message "Consider using 'ended abruptly' instead of 'came to an abrupt end'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "ended abruptly"
+
+test "We should came to an abrupt end today." "We should ended abruptly today."

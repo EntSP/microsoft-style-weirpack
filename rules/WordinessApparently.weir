@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (it would appear that)
+
+let message "Consider using 'apparently' instead of 'it would appear that'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "apparently"
+
+test "We should it would appear that today." "We should apparently today."

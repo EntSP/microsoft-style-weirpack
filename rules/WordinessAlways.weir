@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (at all times)
+
+let message "Consider using 'always' instead of 'at all times'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "always"
+
+test "We should at all times today." "We should always today."

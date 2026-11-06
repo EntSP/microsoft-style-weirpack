@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Terms.yml (MIT).
+# Generated -- see the README.
+
+expr main (pb)
+
+let message "Prefer 'PB' over 'pb'."
+let description "Microsoft Writing Style Guide: Terms."
+let kind "Usage"
+let becomes "PB"
+
+test "We should pb today." "We should PB today."

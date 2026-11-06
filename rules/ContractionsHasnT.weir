@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Contractions.yml (MIT).
+# Generated -- see the README.
+
+expr main (has not)
+
+let message "Use 'hasn't' instead of 'has not'."
+let description "Microsoft Writing Style Guide: Contractions."
+let kind "Style"
+let becomes "hasn't"
+
+test "We should has not today." "We should hasn't today."

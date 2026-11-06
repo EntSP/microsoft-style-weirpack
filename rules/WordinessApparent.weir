@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (readily apparent)
+
+let message "Consider using 'apparent' instead of 'readily apparent'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "apparent"
+
+test "We should readily apparent today." "We should apparent today."

@@ -1,0 +1,11 @@
+# Ported from vale-cli/Microsoft Wordiness.yml (MIT).
+# Generated -- see the README.
+
+expr main (lift up)
+
+let message "Consider using 'lift' instead of 'lift up'."
+let description "Microsoft Writing Style Guide: Wordiness."
+let kind "Style"
+let becomes "lift"
+
+test "We should lift up today." "We should lift today."
